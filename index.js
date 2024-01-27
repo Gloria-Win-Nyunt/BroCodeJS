@@ -1,73 +1,47 @@
-// let fullName='Gloria Win';
-// let age=23;
-// let isStudent=true;
+let x=3;
+let y=2;
+let z=1;
 
-// document.getElementById('p1').textContent=`Your name is ${fullName}`;
-// document.getElementById('p2').textContent=`You are ${age} years old`;
-// document.getElementById('p3').textContent=`Enrolled: ${isStudent}`;
+// z=Math.round(x)
+// z=Math.floor(x);
+// z=Math.ceil(x);
+// z=Math.trunc(x)
+// z=Math.pow(y,y);
+// z=Math.sqrt(81);
+// z=Math.log(10);
+// z=Math.sin(45)
+//z=Math.abs(z); // absolute value removes negative sign
+// z=Math.sign();
+// let max=Math.m(x,y,z)
+// let min=Math.min(x,y,z)
 
-// let students =30;
-// students=students-1;
-// students=students*2;
-// students=students/2;
-// students=students**2; //power 2
-// students=students%2; //remainder
-// students+=1;
+//Random Number Generator
+//Number between 1 and 6 
+// let randomNum=Math.round(Math.random()*6)+1;
 
-// let result= 1+2*3+4**2;
+//Number between 1 and 100
+// let randomNum=Math.round(Math.random()*100)+1;
 
+// const min=50;
+// const max=100;
 
-// console.log(result);
+// let randomNum=Math.round(Math.random()*(max-min))+min;
+// console.log(randomNum);
 
-// let username=prompt("what's your username");
-// console.log(username);
-
-
-// document.getElementById('mySubmit').onclick=function(){
-//     let username=document.querySelector('input').value;
-//     document.getElementById('myH1').textContent=`Welcome ${username}`
-// }
-// btn.addEventListener('click',()=>{
-//  return username.value;
-// })
-// let span=document.querySelector('span');
-// span.textContent=username.value;
-
-//Type conversion 
-// let age=Number(prompt('how old are you?'))
-// age+=1;
-// console.log(age);
-
-// let x;
-// let y;
-// let z;
-
-// x=Number(x);
-// y=String(y);
-// z=Boolean(z);
-
-// console.log(x,typeof x);
-// console.log(y,typeof y);
-// console.log(z,typeof z);
-// document.querySelector('button').onclick=function(){
-//     const pi=3.14159;
-//     let radius=document.querySelector('input').value;
-//     let circumference=2*pi*radius;
-//     document.getElementById('result').textContent=`The circumstane of circle with ${radius} is ${circumference}cm`;
-// }
-
-//Counter program
-
-let num=0;
-document.getElementById('de').onclick=function(){
-    document.querySelector('h1').textContent=--num;
-}
-
-document.getElementById('re').onclick=function(){
-    num=0;
-    document.querySelector('h1').textContent=num;
-}
-
-document.getElementById('in').onclick=function(){
-    document.querySelector('h1').textContent=++num;
+const myButton=document.getElementById('myButton');
+const myLabel1=document.getElementById('myLabel1');
+const myLabel2=document.getElementById('myLabel2');
+const myLabel3=document.getElementById('myLabel3');
+const min=1;
+const max=6;
+let randomNum1;
+let randomNum2;
+let randomNum3;
+myButton.onclick=function(){
+    randomNum1=Math.floor(Math.random()*max)+min;
+    randomNum2=Math.floor(Math.random()*max)+min;
+    randomNum3=Math.floor(Math.random()*max)+min;
+    myLabel1.textContent=randomNum1;
+    myLabel2.textContent=randomNum2;
+    myLabel3.textContent=randomNum3;
 }
