@@ -92,5 +92,50 @@
 // let mixture=new Array('dog',20,1.3,true); // array object constructor
 // console.log(mixture.length);
 
-let mixture=['dog',20,1.3,true];
-console.log(mixture);
+// let mixture=['dog',20,1.3,true];
+// mixture[3]=false;
+// mixture[4]='glori';
+// console.log(mixture);
+
+// let fruits=['apple','mango'];
+// fruits[2]='grape';
+// console.log(fruits[fruits.length-1]); // retrieve last index value from array
+
+//Nested arrays
+// let arr=[
+//     ['a','b','c'],
+//     [1,2,3]
+// ]
+
+// console.log(arr[0][2]);
+
+let data1=[1,2,3];
+let data2=[4,5,6];
+// let result=[1,2,3,4,5,6]// desired output
+// let result=[data1,data2];
+// console.log(result);
+
+//Spread operator
+// let result=[...data1,...data2];
+// console.log(result);
+
+// function add(a,b,c){
+//     console.log(a+b+c);
+// }
+
+// add(...data1);
+// add(...data2);
+
+
+//destructuring
+
+// let datas=['MgMg',20,'Ttu'];
+// let [name,age,school]=datas;
+// console.log(name,age,school);
+
+// function add([a,b,c]){
+//     console.log(a+b+c);
+// }
+
+// add([1,2,4]);
+
