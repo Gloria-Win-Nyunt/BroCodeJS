@@ -138,4 +138,45 @@ let data2=[4,5,6];
 // }
 
 // add([1,2,4]);
+// let animals=['cat','dog','snake','rabbit'];
+// animals.push('duck'); // နောက်ဆုံးခန်းကထည့်
+// animals.unshift('ant'); // ရှေ့ခန်းကထည့်
+// animals.pop();//နောက်ဆုံးခန်းကိုထုတ် parameter no need
+// animals.shift();//ရှေ့ခန်းက value ကိုထုတ်
+// let index=animals.indexOf('snake');// အခန်းနံပါတ်ရှာ
+// console.log(animals.join(':'));//array ခန်းထဲက value တွေကို ဆက်
+// animals.splice(0,2)// array ထဲက data တွေကို ဘယ်ကနေဘယ်ထိ တိတိကျကျဖြတ်ချင်တဲ့နေရာသုံး
+// console.log(animals);
 
+//Array advanced methods
+//map method
+
+// let nums=[1,2,3,4,5];
+// let newArr=nums.map((n)=>{
+//     return n+100;
+//  });
+// console.log(newArr);
+
+// let animals=['cat','dog','snake','rabbit'];
+// let newAnimals=animals.map((ani)=>{
+//     return 'Mr.'+ani;
+// })
+
+// console.log(newAnimals);
+
+//Filter method
+// let nums=[1,2,3,4,5,6];
+// // let result=[2,4,6];
+// let result=nums.filter((num)=>{
+//    return num!=3;
+  
+// })
+// console.log(result);
+
+//Reduce method
+let nums=[1,2,3,4,5,6];
+let result=nums.reduce((prev,current)=>{
+    console.log(prev,current);
+    return prev*current;
+})
+console.log(result);
