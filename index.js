@@ -174,9 +174,27 @@ let data2=[4,5,6];
 // console.log(result);
 
 //Reduce method
+// let nums=[1,2,3,4,5,6];
+// let result=nums.reduce((prev,current)=>{
+//     console.log(prev,current);
+//     return prev*current;
+// })
+// console.log(result);
+
+//Array methods
 let nums=[1,2,3,4,5,6];
-let result=nums.reduce((prev,current)=>{
-    console.log(prev,current);
-    return prev*current;
-})
-console.log(result);
+
+//map
+let newArr=nums.map(num=>num+100)
+console.log(newArr);
+
+//filter
+let filteredNumbers=nums.filter(num=>num%2==0)
+console.log(filteredNumbers);
+
+//reduced
+let reducedNumbers=nums.reduce((prev,current)=>prev+current)
+console.log(reducedNumbers);
+
+//Refactoring ဆိုတာ line အရေအတွက်နဲပီး ဖတ်ရင်ရှင်းလင်းနေအောင်လုပ်တာ parameter ကွင်းဖြုတ်လို့ရရင်ဖြုတ် {} ဖြုတ်ရရင်ဖြုတ်
+
