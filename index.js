@@ -182,19 +182,145 @@ let data2=[4,5,6];
 // console.log(result);
 
 //Array methods
-let nums=[1,2,3,4,5,6];
+// let nums=[1,2,3,4,5,6];
 
-//map
-let newArr=nums.map(num=>num+100)
-console.log(newArr);
+// //map
+// let newArr=nums.map(num=>num+100)
+// console.log(newArr);
 
-//filter
-let filteredNumbers=nums.filter(num=>num%2==0)
-console.log(filteredNumbers);
+// //filter
+// let filteredNumbers=nums.filter(num=>num%2==0)
+// console.log(filteredNumbers);
 
-//reduced
-let reducedNumbers=nums.reduce((prev,current)=>prev+current)
-console.log(reducedNumbers);
+// //reduced
+// let reducedNumbers=nums.reduce((prev,current)=>prev+current)
+// console.log(reducedNumbers);
 
 //Refactoring ဆိုတာ line အရေအတွက်နဲပီး ဖတ်ရင်ရှင်းလင်းနေအောင်လုပ်တာ parameter ကွင်းဖြုတ်လို့ရရင်ဖြုတ် {} ဖြုတ်ရရင်ဖြုတ်
 
+// let str=new String('hello');// low level declaration
+// console.log(str);
+
+//String properties
+// let str='hello,world,again';
+// console.log(str.length); //length property
+// console.log(str[4]);//retrive value with index
+// console.log(str.toUpperCase());// ပင်မ data ကိုမချိန်း
+// console.log(str.toLowerCase());
+// console.log(str.trim());//space တွေကိုဖြုတ်ချင် ရင်သုံး string အသစ်တခု return ပြန်
+// let splitData=str.split(',');
+// console.log(splitData);
+
+// let num=new Number(12.5);
+// let fix=num.toFixed(); //.5 ကျော်ရင်တိုးယူ အနီးစပ်ဆုံးကိန်းယူ
+// console.log(fix);
+
+// let isTrue=new Boolean(true);
+// let rest=isTrue.toString()
+// console.log(typeof rest);
+
+//Objects
+   //parent code
+// console.log(this); //window
+// let people={
+//     name:'john',
+//     age:20,
+//     // eat:()=>{
+//     //     console.log('person is eating');
+//     // } မသုံးသင့်
+//     //short form
+ 
+   
+//    eat(){
+//     //child code
+//     setTimeout(()=>{
+//         console.log(this);
+//     },3000)
+//    }
+// }
+
+// people.eat();
+// console.log(person);
+// console.log(person.age); //dot notation
+// console.log(person["name"]);//ဆွဲထုတ်ချင်တဲ့ property ကို string ပုံစံနဲ့ရေး
+
+//why we use array notation
+// let propName='age';
+// console.log(person[propName]);
+
+// person.name='John Doe'; //Overriding
+// person.eat();
+// person.drink=function(){
+//     console.log('person is drinking');
+// }
+// console.log(person);
+
+
+// console.log(window); //window object (default object)
+
+// setTimeout(()=>{
+//     console.log('I am callback');
+// },3000);
+
+//This keyword ဆိုတာ current function ရဲ့ object ကိုလှမ်းထောက်ပေးတာဖြစ်တယ်
+
+
+// method => method's object
+// regular func => window
+// arrow func => ကိုယ်ပိုင် this keyword မရှိ မိဘဆီကယူသုံး lexical scoping လို့ခေါ်တယ်
+
+//Object spread
+// let obj1={
+//     myName:'gloria',
+//     myAge:23
+// }
+// let obj2={
+//     myHairColor:'black',
+// }
+// let obj3={...obj1,...obj2};
+// console.log(obj3);
+
+//object destructuring
+// let {name,age}={
+//     name:'gloria',
+//     age:20
+// }
+// console.log(name,age);
+
+//property shorthand
+
+// let name='gloria';// pure code
+// let age=23;
+// let person={
+//     name:name,
+//     age:age
+// }
+// console.log(person);
+
+// let name='gloria';// property shorthand
+// let age=23;
+// let person={
+//    name,age
+// }
+// console.log(person);
+//property နာမည်နဲ့ variable name နဲ့တူနေမယ်ဆိုရင် shorthand ကိုအသုံးချလို့ရ
+
+//javascript data structure
+let people=[
+    {name:'gloria',age:23,gender:'male'},
+    {name:'maria',age:53,gender:'male'},
+    {name:'aria',age:29,gender:'female'}
+]
+//Map method 
+let result=people.map((user)=>{
+    return user.name;
+})
+console.log(result);
+
+// Filter method
+
+let searchKeyword=prompt('search person: ');
+let search=people.filter((user)=>{
+    return user.name.includes(searchKeyword)
+})
+console.log(search);
