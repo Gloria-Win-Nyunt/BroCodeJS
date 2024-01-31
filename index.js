@@ -306,21 +306,117 @@ let data2=[4,5,6];
 //property နာမည်နဲ့ variable name နဲ့တူနေမယ်ဆိုရင် shorthand ကိုအသုံးချလို့ရ
 
 //javascript data structure
+// let people=[
+//     {name:'gloria',age:23,gender:'male'},
+//     {name:'maria',age:53,gender:'male'},
+//     {name:'aria',age:29,gender:'female'}
+// ]
+// //Map method 
+// let result=people.map((user)=>{
+//     return user.name;
+// })
+// console.log(result);
+
+// // Filter method
+
+// let searchKeyword=prompt('search person: ');
+// let search=people.filter((user)=>{
+//     return user.name.includes(searchKeyword)
+// })
+// console.log(search);
+
+
+//Json သတ်မှတ်ထားတဲ့ format နဲ့ရေးတဲ့ string 
+// transfering data from one language to another
+// long form of Json= javascript object notation
+
+//Json format
+//Json မှာသိမ်းလို့ရတဲ့ data type 6 မျိုး = string,number,boolean,array,object,null
+
+//change Json format to javascript object using parse
+/*
+let person='{"name":"gloria","age":20}'
+let obj=JSON.parse(person);
+console.log(obj.name);
+*/ //accept string with json format
+
+//change javascript object to json using stringify
+// let person={
+//     name:'gloria',
+//     age:20
+// }
+// console.log(JSON.stringify(person));
+
+let tired=prompt('Are you tired? yes/no');
+if(tired==='yes'){
+    console.log('rest well');
+}
+else if(tired==='no'){
+    console.log('go back to work');
+}
+else{
+    console.log('you typed wrong');
+}
+
+let product_prices=[100,500,100,300,700,200,100];
+let price_100=product_prices.map((price)=>{
+   if(price===100)price-=30;
+   return price;
+})
+console.log(price_100);
+
 let people=[
-    {name:'gloria',age:23,gender:'male'},
-    {name:'maria',age:53,gender:'male'},
-    {name:'aria',age:29,gender:'female'}
+    {name:'john',age:25},
+    {name:'jane',age:20,gender:'f'},
+    {name:'jack',age:40,gender:'m'},
+    {name:'mary',age:20,gender:'f'},
+    {name:'yuya',age:20,gender:'f'},
+    {name:'nodd',age:90}
 ]
-//Map method 
 let result=people.map((user)=>{
-    return user.name;
+    if(user.gender==='f'){
+        return user.gender='female'
+    }
+    else if(user.gender==='m'){
+        return user.gender='male'
+    }
+    else{
+        return user.gender='unknown'
+    }
 })
-console.log(result);
 
-// Filter method
-
-let searchKeyword=prompt('search person: ');
-let search=people.filter((user)=>{
-    return user.name.includes(searchKeyword)
+people=people.map((user)=>{
+    if(user.gender){
+        if(user.gender==='m')
+        user.gender='male'
+        if(user.gender==='f')
+        user.gender='female'
+    }
+    else
+        user.gender='unknown'
+    return user
 })
-console.log(search);
+
+console.log(people);
+
+ternary operator
+
+let age=19;
+let hasLicense=age>18?'yes':'no';
+console.log(hasLicense);
+
+switch cases break မလုပ်ခဲ့ရင်အောက်က case တွေပါ ဆက် run 
+
+
+people=people.map((person)=>{
+    switch(person.gender){
+        case 'm':person.gender='male';break;
+        case 'f':person.gender='female';break;
+        default: person.gender='unknown'
+
+    }
+    return person
+})
+console.log(people);
+
+
