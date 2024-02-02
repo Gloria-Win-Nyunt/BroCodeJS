@@ -109,8 +109,8 @@
 
 // console.log(arr[0][2]);
 
-let data1=[1,2,3];
-let data2=[4,5,6];
+// let data1=[1,2,3];
+// let data2=[4,5,6];
 // let result=[1,2,3,4,5,6]// desired output
 // let result=[data1,data2];
 // console.log(result);
@@ -347,76 +347,250 @@ console.log(obj.name);
 // }
 // console.log(JSON.stringify(person));
 
-let tired=prompt('Are you tired? yes/no');
-if(tired==='yes'){
-    console.log('rest well');
+// let tired=prompt('Are you tired? yes/no');
+// if(tired==='yes'){
+//     console.log('rest well');
+// }
+// else if(tired==='no'){
+//     console.log('go back to work');
+// }
+// else{
+//     console.log('you typed wrong');
+// }
+
+// let product_prices=[100,500,100,300,700,200,100];
+// let price_100=product_prices.map((price)=>{
+//    if(price===100)price-=30;
+//    return price;
+// })
+// console.log(price_100);
+
+// let people=[
+//     {name:'john',age:25},
+//     {name:'jane',age:20,gender:'f'},
+//     {name:'jack',age:40,gender:'m'},
+//     {name:'mary',age:20,gender:'f'},
+//     {name:'yuya',age:20,gender:'f'},
+//     {name:'nodd',age:90}
+// ]
+// let result=people.map((user)=>{
+//     if(user.gender==='f'){
+//         return user.gender='female'
+//     }
+//     else if(user.gender==='m'){
+//         return user.gender='male'
+//     }
+//     else{
+//         return user.gender='unknown'
+//     }
+// })
+
+// people=people.map((user)=>{
+//     if(user.gender){
+//         if(user.gender==='m')
+//         user.gender='male'
+//         if(user.gender==='f')
+//         user.gender='female'
+//     }
+//     else
+//         user.gender='unknown'
+//     return user
+// })
+
+// console.log(people);
+
+// ternary operator
+
+// let age=19;
+// let hasLicense=age>18?'yes':'no';
+// console.log(hasLicense);
+
+// switch cases break မလုပ်ခဲ့ရင်အောက်က case တွေပါ ဆက် run 
+
+
+// people=people.map((person)=>{
+//     switch(person.gender){
+//         case 'm':person.gender='male';break;
+//         case 'f':person.gender='female';break;
+//         default: person.gender='unknown'
+
+//     }
+//     return person
+// })
+// console.log(people);
+
+//while loop
+// let x=0
+// while(x<3){
+//     console.log('Hi'+x);
+//     x++
+// }
+
+// let people=['mgmg','kyawkyaw','ayeaye','susu'];
+// let person={
+//     name:'gloria',
+//     age:20
+// }
+// x=0;
+// while(x<people.length){
+//     console.log(people[x]);
+//     x++;
+// }
+// people.map((m)=>{
+//     console.log(m);
+// })
+// console.log(people);
+
+//Do while loop 
+// let x=0
+// do{
+//     console.log('work');
+//     x++;
+// }while(x<3)
+
+// for loop
+
+// for(let x=0;x<people.length;x++){
+//    console.log(people[x]);
+// }
+
+//for of loop
+// for (person of people) {
+//     console.log(person);
+// }
+
+//for in loop (objects)
+// for (key in person) {
+//    console.log(`${key} is ${person[key]}`);
+// }
+
+// //for in loop (arrays)
+// for(user in people){
+//     console.log(`index ${user} is ${people[user]}`);
+// }
+
+// {
+//     {
+//         let x=10;
+//         console.log(x);
+//     }
+
+// }   
+
+
+// class Car{
+//     wheels=4;
+//     color="black"
+//     drive(){
+//         console.log('car is driving');
+//     }
+// }
+
+// let car=new Car
+// console.log(car.color);
+
+// let car2=new Car
+// car2.color="red"
+// console.log(car2.color);
+
+
+//Calculator blueprint
+// class Calculator{
+//     static PI=3.14
+//     add(n1,n2){
+//         return n1+n2;
+//     }
+//     sub(n1,n2){
+//         return n1-n2;
+//     }
+//     mul(n1,n2){
+//         return n1*n2
+//     }
+//     div(n1,n2){
+//         return n1/n2
+//     }
+//     rem(n1,n2){
+//         return n1%n2
+//     }
+// }
+
+// let calculator=new Calculator
+// console.log(calculator.rem(3,2))
+// console.log(calculator.PI);
+
+//object  1 ခုမတည်ဆောက်ပဲ တိုက်ရိုက်ခေါ်သုံးချင်ရင် property ကို static တပ်ပေးလိုက် 
+// static ပါတဲ့ property က classname နဲ့တိုက်ရိုက်ခေါ်သုံးလို့ရတယ်
+
+// console.log(Calculator.PI);
+
+// class Calculator{
+//    PI=3.14
+//    name='casio'
+//    area(r){
+//         return this.PI*r**2
+//     }
+//     volume(r,h){
+//         return this.area(r)*h;
+//     }
+//     static info(){
+//         let calculator=new Calculator
+//         console.log('i am '+calculator.name+' calculator')
+//     }
+// }
+// // let calculator=new Calculator;
+// // console.log(calculator.volume(2,3));
+
+// Calculator.info();
+
+
+// class Car{
+//     Name=''
+//     wheels=4;
+//     constructor(type,wheels){
+//         this.Name=type;
+//         this.wheels=wheels
+//         this.drive()
+//     }
+//     drive(){
+//         console.log(this.Name+" is driving");
+//     }
+//     getWheel(){
+//         console.log(this.Name+' has '+this.wheels+' wheels');
+//     }
+// }
+
+// new Car('toyota')
+// new Car('BMW',10).getWheel();
+
+// class Car{
+//     Name="toyota"
+//     #hp=200;
+//     getHP(){
+//         console.log('Horse power is '+this.#hp);
+//     }
+// }
+
+// let car=new Car;
+// car.Name='BMW'
+// console.log(car.getHP());
+
+class Animal{
+    #age=1
+    Name='';
+    constructor(name){
+        this.Name=name;
+    }
+    run(){
+        console.log(`${this.Name} is running`);
+    }
 }
-else if(tired==='no'){
-    console.log('go back to work');
+class Dog extends Animal{
+    bark(){
+        console.log(this.Name+' wolf wolf');
+    }
 }
-else{
-    console.log('you typed wrong');
-}
 
-let product_prices=[100,500,100,300,700,200,100];
-let price_100=product_prices.map((price)=>{
-   if(price===100)price-=30;
-   return price;
-})
-console.log(price_100);
-
-let people=[
-    {name:'john',age:25},
-    {name:'jane',age:20,gender:'f'},
-    {name:'jack',age:40,gender:'m'},
-    {name:'mary',age:20,gender:'f'},
-    {name:'yuya',age:20,gender:'f'},
-    {name:'nodd',age:90}
-]
-let result=people.map((user)=>{
-    if(user.gender==='f'){
-        return user.gender='female'
-    }
-    else if(user.gender==='m'){
-        return user.gender='male'
-    }
-    else{
-        return user.gender='unknown'
-    }
-})
-
-people=people.map((user)=>{
-    if(user.gender){
-        if(user.gender==='m')
-        user.gender='male'
-        if(user.gender==='f')
-        user.gender='female'
-    }
-    else
-        user.gender='unknown'
-    return user
-})
-
-console.log(people);
-
-ternary operator
-
-let age=19;
-let hasLicense=age>18?'yes':'no';
-console.log(hasLicense);
-
-switch cases break မလုပ်ခဲ့ရင်အောက်က case တွေပါ ဆက် run 
-
-
-people=people.map((person)=>{
-    switch(person.gender){
-        case 'm':person.gender='male';break;
-        case 'f':person.gender='female';break;
-        default: person.gender='unknown'
-
-    }
-    return person
-})
-console.log(people);
-
+let animal=new Animal;
+animal.age=4
+console.log(animal.age);
 
