@@ -611,30 +611,58 @@ console.log(obj.name);
 
 //promise
 
-function asynchronous(){
-   return new Promise((resolve,reject)=>{
-    // let result=0;
-    // for(let i=0;i<1000000000;i++){
-    //     result+=i+undefined;
-    // }
-    // if(result){
-    //     resolve(result)
-    // }
-    // else{
-    //     reject('have got some error')
-    // }
-    resolve(data)
+// function asynchronous(){
+//    return new Promise((resolve,reject)=>{
+//     // let result=0;
+//     // for(let i=0;i<1000000000;i++){
+//     //     result+=i+undefined;
+//     // }
+//     // if(result){
+//     //     resolve(result)
+//     // }
+//     // else{
+//     //     reject('have got some error')
+//     // }
+//     resolve(data)
 
-    reject(error)
-   })
-}
-console.log('work');
-asynchronous()
-.then((result)=>{
-    console.log(result);
-    console.log('after async task');
-})
-.catch((reject)=>{
-    console.log(reject);
-})
-console.log('important work');
+//     reject(error)
+//    })
+// }
+// console.log('work');
+// asynchronous()
+// .then((result)=>{
+//     console.log(result);
+//     console.log('after async task');
+// })
+// .catch((reject)=>{
+//     console.log(reject);
+// })
+// console.log('important work');
+
+//fetch 
+// let userid=prompt('tell me your user id')
+// fetch('https://jsonplaceholder.typicode.com/todos/'+userid)
+// .then((response)=>{
+//    return response.json()
+// })
+// .then((data)=>{
+//     console.log(data);
+// })
+// .catch((error)=>{
+//     console.log(error);
+// })
+
+// async function fetchTodo(){
+//     try {
+//         let response=await fetch('https://jsonplaceholder.typicode.com/todos/')
+//         console.log('hi');
+//         let datas=await response.json()
+//         console.log(datas);
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
+// fetchTodo();
+
+//coding styles guideline
+
