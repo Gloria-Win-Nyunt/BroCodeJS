@@ -33,7 +33,7 @@
 // test(1,2,3,4,5)
 // ကွင်းစကွင်းပိတ်ထဲမှာ အစက်သုံးစက်ရှိမှ rest parameter
 
-//Function statement 
+//Function statement
 // function myName(){
 //     console.log('gloria');
 // }
@@ -46,9 +46,9 @@
 
 // sayHi('hello');
 
-//Callback function 
+//Callback function
 // function saysMyname(name,fun){
-//    console.log(fun(name)); 
+//    console.log(fun(name));
 // }
 
 // saysMyname('gloria',function(name){return name;});
@@ -61,7 +61,6 @@
 // }
 
 // twice(5,function(num){return num+6});
-
 
 //Arrow function 1
 // let sayHi=()=>console.log('hello');
@@ -77,8 +76,6 @@
 
 // let twice=num=>num*2;
 // console.log(twice(10));
-
-
 
 // let cat={
 //     name:'gloria',
@@ -126,7 +123,6 @@
 // add(...data1);
 // add(...data2);
 
-
 //destructuring
 
 // let datas=['MgMg',20,'Ttu'];
@@ -169,7 +165,7 @@
 // // let result=[2,4,6];
 // let result=nums.filter((num)=>{
 //    return num!=3;
-  
+
 // })
 // console.log(result);
 
@@ -220,7 +216,7 @@
 // console.log(typeof rest);
 
 //Objects
-   //parent code
+//parent code
 // console.log(this); //window
 // let people={
 //     name:'john',
@@ -229,8 +225,7 @@
 //     //     console.log('person is eating');
 //     // } မသုံးသင့်
 //     //short form
- 
-   
+
 //    eat(){
 //     //child code
 //     setTimeout(()=>{
@@ -255,7 +250,6 @@
 // }
 // console.log(person);
 
-
 // console.log(window); //window object (default object)
 
 // setTimeout(()=>{
@@ -263,7 +257,6 @@
 // },3000);
 
 //This keyword ဆိုတာ current function ရဲ့ object ကိုလှမ်းထောက်ပေးတာဖြစ်တယ်
-
 
 // method => method's object
 // regular func => window
@@ -311,7 +304,7 @@
 //     {name:'maria',age:53,gender:'male'},
 //     {name:'aria',age:29,gender:'female'}
 // ]
-// //Map method 
+// //Map method
 // let result=people.map((user)=>{
 //     return user.name;
 // })
@@ -325,8 +318,7 @@
 // })
 // console.log(search);
 
-
-//Json သတ်မှတ်ထားတဲ့ format နဲ့ရေးတဲ့ string 
+//Json သတ်မှတ်ထားတဲ့ format နဲ့ရေးတဲ့ string
 // transfering data from one language to another
 // long form of Json= javascript object notation
 
@@ -405,8 +397,7 @@ console.log(obj.name);
 // let hasLicense=age>18?'yes':'no';
 // console.log(hasLicense);
 
-// switch cases break မလုပ်ခဲ့ရင်အောက်က case တွေပါ ဆက် run 
-
+// switch cases break မလုပ်ခဲ့ရင်အောက်က case တွေပါ ဆက် run
 
 // people=people.map((person)=>{
 //     switch(person.gender){
@@ -441,7 +432,7 @@ console.log(obj.name);
 // })
 // console.log(people);
 
-//Do while loop 
+//Do while loop
 // let x=0
 // do{
 //     console.log('work');
@@ -475,8 +466,7 @@ console.log(obj.name);
 //         console.log(x);
 //     }
 
-// }   
-
+// }
 
 // class Car{
 //     wheels=4;
@@ -492,7 +482,6 @@ console.log(obj.name);
 // let car2=new Car
 // car2.color="red"
 // console.log(car2.color);
-
 
 //Calculator blueprint
 // class Calculator{
@@ -518,7 +507,7 @@ console.log(obj.name);
 // console.log(calculator.rem(3,2))
 // console.log(calculator.PI);
 
-//object  1 ခုမတည်ဆောက်ပဲ တိုက်ရိုက်ခေါ်သုံးချင်ရင် property ကို static တပ်ပေးလိုက် 
+//object  1 ခုမတည်ဆောက်ပဲ တိုက်ရိုက်ခေါ်သုံးချင်ရင် property ကို static တပ်ပေးလိုက်
 // static ပါတဲ့ property က classname နဲ့တိုက်ရိုက်ခေါ်သုံးလို့ရတယ်
 
 // console.log(Calculator.PI);
@@ -541,7 +530,6 @@ console.log(obj.name);
 // // console.log(calculator.volume(2,3));
 
 // Calculator.info();
-
 
 // class Car{
 //     Name=''
@@ -608,7 +596,6 @@ console.log(obj.name);
 // },3000)
 // console.log(4);
 
-
 //promise
 
 // function asynchronous(){
@@ -639,7 +626,7 @@ console.log(obj.name);
 // })
 // console.log('important work');
 
-//fetch 
+//fetch
 // let userid=prompt('tell me your user id')
 // fetch('https://jsonplaceholder.typicode.com/todos/'+userid)
 // .then((response)=>{
@@ -666,3 +653,55 @@ console.log(obj.name);
 
 //coding styles guideline
 
+//all_cap
+// const PI=3.14 // for constant variables
+
+// //snake_case
+// let color_name="black" // for normal variables
+
+// //camel_case
+// let obj={ // for object variables
+//     propertyName:"blue",
+// }
+
+// //capital_case
+// class Car{ // for classes
+
+// }
+
+// //Arrays
+// let array=['gloria','susu','aye']
+
+// //prefered array
+
+// let new_rray=[
+//     'gloria',
+//     'susu',
+//     'aye', //trailing
+// ]
+
+// //if only one output, don't put {}
+// if(condition) console.log('apple')
+
+// //if many statements, put {}
+// if(condition){
+//     console.log('statement');
+//     console.log('statement');
+// }
+
+// else console.log('statement');
+
+// //function
+// function test() { //() နဲ့ {} ကြားမှာ space တခုလို
+//     ret
+// }
+
+// function test() {
+//   console.log("hi");
+// }
+
+const {minus,add,PI} = require("./math");
+// console.log(add(20, 30));
+console.log(minus(20, 30));
+console.log(add(20, 30));
+console.log(PI);
