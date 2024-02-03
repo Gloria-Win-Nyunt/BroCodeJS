@@ -574,23 +574,67 @@ console.log(obj.name);
 // car.Name='BMW'
 // console.log(car.getHP());
 
-class Animal{
-    #age=1
-    Name='';
-    constructor(name){
-        this.Name=name;
-    }
-    run(){
-        console.log(`${this.Name} is running`);
-    }
-}
-class Dog extends Animal{
-    bark(){
-        console.log(this.Name+' wolf wolf');
-    }
-}
+// class Animal{
+//     #age=1
+//     Name='';
+//     constructor(name){
+//         this.Name=name;
+//     }
+//     run(){
+//         console.log(`${this.Name} is running`);
+//     }
+// }
+// class Dog extends Animal{
+//     bark(){
+//         console.log(this.Name+' wolf wolf');
+//     }
+// }
 
-let animal=new Animal;
-animal.age=4
-console.log(animal.age);
+// let animal=new Animal;
+// animal.age=4
+// console.log(animal.age);
 
+//Asynchronous javascript
+
+//Sync way
+// console.log(1);
+// console.log(2);
+
+// //Async way
+// console.log(1);
+// console.log(2);
+// setTimeout(()=>{
+//     console.log(3);
+// },3000)
+// console.log(4);
+
+
+//promise
+
+function asynchronous(){
+   return new Promise((resolve,reject)=>{
+    // let result=0;
+    // for(let i=0;i<1000000000;i++){
+    //     result+=i+undefined;
+    // }
+    // if(result){
+    //     resolve(result)
+    // }
+    // else{
+    //     reject('have got some error')
+    // }
+    resolve(data)
+
+    reject(error)
+   })
+}
+console.log('work');
+asynchronous()
+.then((result)=>{
+    console.log(result);
+    console.log('after async task');
+})
+.catch((reject)=>{
+    console.log(reject);
+})
+console.log('important work');
